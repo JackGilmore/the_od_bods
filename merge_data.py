@@ -242,9 +242,13 @@ def clean_data(dataframe):
         "Aberdeen City Council ArcGIS Online": "Aberdeen City Council",
         "City of Edinburgh Council Mapping": "City of Edinburgh Council",
         "Cairngorms National Park": "Cairngorms National Park Authority",
-        "Loch Lomond and The Trossachs National Park": "Loch Lomond and The Trossachs National Park Authority",
+        "Loch Lomond and The Trossachs National Park": "Loch Lomond and the Trossachs National Park Authority",
+        "Loch Lomond and The Trossachs National Park Authority": "Loch Lomond and the Trossachs National Park Authority",
         "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator",
         "DCC Public GIS Portal": "Dundee City Council",
+        "Ramblers": "Ramblers Scotland",
+        "Argyll & Bute Council": "Argyll and Bute Council",
+        
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
